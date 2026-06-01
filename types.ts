@@ -9,7 +9,6 @@ export enum StepId {
   Consent = "consent",
   Reflection = "reflection",
   Metrics = "metrics",
-  reflectionDistrict = "reflectionDistrict",
   Summary = "summary",
   ThankYou = "thankyou",
 }
@@ -59,7 +58,6 @@ export interface ConversationData {
   districts: string[];
   selectedInitiatives: string[];
   interestAreas: string[];
-  interestDistricts: string[];
   shareContact: boolean;
   contactInfo: string;
   isAnonymous: boolean;
@@ -128,13 +126,10 @@ export interface AnalyticsData {
   totalDialogues: number;
   totalParticipants: number;
   avgDuration: number;
+  totalMinutes: number;
   dialoguesByDistrict: { name: string; value: number }[];
   topTopics: { name: string; value: number }[];
   topInterestAreas: { name: string; value: number }[];
-  initiativeEngagement: {
-    recommended: number;
-    selected: number;
-  };
 }
 
 // Kept for compatibility, but the manual back handling logic is mostly managed within components now.

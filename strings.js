@@ -3,7 +3,7 @@ export default {
         "dialogue": {
             "stepLabel": "Schritt {{current}} von {{total}}",
             "headerTitle": "Besprochen...",
-            "headerSubtitle": "Dokumentiere die Essenz deines Dialogs",
+            "headerSubtitle": "Dokumentiere Notizen zu deinem Gespräch",
             "categoriesTitle": "Themenauswahl",
             "categoriesSubtitle": "Wähle alle Themen, die im Dialog\nerwähnt wurden",
             "initiativeMatching": "Selbst aktiv werden",
@@ -286,15 +286,11 @@ export default {
             "totalDialogues": "Gesamtanzahl Dialoge",
             "totalParticipants": "Gesamtanzahl Teilnehmende",
             "avgDuration": "Durchschn. Dauer (Min.)",
+            "totalMinutes": "Gesamtanzahl Minuten",
             "topDiscussedTopics": "Meistdiskutierte Themen",
             "dialoguesPerDistrict": "Dialoge pro Bezirk",
             "topInterestAreas": "Top-Interessensgebiete",
-            "topSelectedIssues": "Meistgewählte Themen",
-            "initiativeEngagement": "Initiativen-Beteiligung",
-            "initiativeEngagementDetails": "Initiativen-Beteiligung Details",
-            "recommended": "Empfohlen",
-            "selected": "Ausgewählt",
-            "engagementRate": "Beteiligungsrate"
+            "topSelectedIssues": "Meistgewählte Themen"
         },
         "thankYou": {
             "thankYou": "Vielen Dank!",
@@ -335,7 +331,7 @@ export default {
         "dialogue": {
             "stepLabel": "Step {{current}} of {{total}}",
             "headerTitle": "Discussed",
-            "headerSubtitle": "Document the essence of your dialogue",
+            "headerSubtitle": "Take notes on your conversation",
             "categoriesTitle": "Category selection",
             "categoriesSubtitle": "Select all topics that were mentioned in the dialogue",
             "initiativeMatching": "Become active yourself",
@@ -618,15 +614,11 @@ export default {
             "totalDialogues": "Total Dialogues",
             "totalParticipants": "Total Participants",
             "avgDuration": "Avg. Duration (min)",
+            "totalMinutes": "Total Minutes",
             "topDiscussedTopics": "Top Discussed Topics",
             "dialoguesPerDistrict": "Dialogues per District",
             "topInterestAreas": "Top Interest Areas",
-            "topSelectedIssues": "Top Selected Issues",
-            "initiativeEngagement": "Initiative Engagement",
-            "initiativeEngagementDetails": "Initiative Engagement Details",
-            "recommended": "Recommended",
-            "selected": "Selected",
-            "engagementRate": "Engagement Rate"
+            "topSelectedIssues": "Top Selected Issues"
         },
         "thankYou": {
             "thankYou": "Thank you very much",
