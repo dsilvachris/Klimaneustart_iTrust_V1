@@ -3,6 +3,7 @@ import Joi from 'joi';
 import User from '../models/User.js';
 import jwt from "jsonwebtoken";
 import {generateAccessToken, generateRefreshToken, MAX_AGE_REFRESH_TOKEN} from "../utils/token.js";
+import { authLimiter } from "../utils/rateLimit.js";
 
 const router = Router();
 
@@ -15,7 +16,7 @@ const userSchema = Joi.object({
 let refreshTokens = [];
 
 // Get users
-router.post('/login', async (req, res, next) => {
+router.post('/login', authLimiter, async (req, res, next) => {
     try {
 
         const { value, error } = userSchema.validate(req.body, { stripUnknown: true });
@@ -55,7 +56,7 @@ router.post('/login', async (req, res, next) => {
 });
 
 // Renew access token and refresh token
-router.post("/refresh", (req, res) => {
+router.post("/refresh", authLimiter, (req, res) => {
     const refreshToken = req.cookies.jwt;
     const { username } = req.body;
 
